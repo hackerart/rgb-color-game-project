@@ -1,0 +1,89 @@
+html {
+  text-align: center; }
+
+body {
+  height: 100vh;
+  background: #232323; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin: 5px;
+  padding: 0; }
+
+.square {
+  height: 150px;
+  border-radius: 15%; }
+  @media (max-width: 525px) {
+    .square {
+      height: 125px; } }
+  @media (max-width: 440px) {
+    .square {
+      height: 100px; } }
+  @media (max-width: 377px) {
+    .square {
+      height: 75px; } }
+
+.row {
+  margin-bottom: 10px; }
+
+#header {
+  background: #436aa8;
+  padding: 10px 0;
+  color: white; }
+  @media (max-width: 556px) {
+    #header h2 {
+      font-size: 1.5em; } }
+  #header #rgb {
+    font-size: 4em; }
+    @media (max-width: 556px) {
+      #header #rgb {
+        font-size: 3.0em; } }
+    @media (max-width: 417px) {
+      #header #rgb {
+        font-size: 2.5em; } }
+    @media (max-width: 340px) {
+      #header #rgb {
+        font-size: 2.0em; } }
+
+#menu {
+  background: white; }
+  #menu .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #menu button {
+    background: inherit;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 0;
+    color: #436aa8;
+    padding: 5px;
+    font-size: 1.25em;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    outline: none; }
+    #menu button:hover {
+      color: white;
+      background: #436aa8; }
+  #menu .selected {
+    color: white;
+    background: #436aa8; }
+
+#game {
+  padding-top: 20px; }
+
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
